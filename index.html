@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Game List</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1> My Game List</h1>
+    </header>  
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="title" class="primary">Title</label>
+          <input type="text" id="title" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="developer" class="primary">Developer</label>
+          <input type="text" id="developer" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="publisher" class="primary">Publisher</label>
+          <input type="text" id="publisher" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="genre" class="primary">Genre</label>
+          <select id="genre" required>
+            <option value="" disabled selected></option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Casual">Casual</option>
+            <option value="Indie">Indie</option>
+            <option value="Massively Multiplayer">Massively Multiplayer</option>
+            <option value="Racing">Racing</option>
+            <option value="RPG">RPG</option>
+            <option value="Simulation">Simulation</option>
+            <option value="Sports">Sports</option>
+            <option value="Strategy">Strategy</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <input type="submit" value="Save Entry"/>
+    </form>
+    <button id="delete-all">Delete All</button>
+    <h1>Game List</h1>
+    <ul id="list"></ul>
+  </body>
+</html>
